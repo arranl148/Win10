@@ -1,0 +1,18 @@
+<!-- To use the configuration file be sure to remove the comments
+https://learn.microsoft.com/en-us/microsoft-365-apps/deploy/office-deployment-tool-configuration-options 
+  -->
+<Configuration>
+  <Info Description="M365 Apps for Enterprise - Visio Plan 2" />
+  <Add Version="MatchInstalled">
+    <Product ID="VisioProRetail">
+      <Language ID="MatchOS" Fallback="en-us" />
+    </Product>
+  </Add>
+ <!-- <Property Name="PinIconsToTaskbar" Value="FALSE" /> default = true -->
+ <!-- <Property Name="SCLCacheOverride" Value="0" />  default
+  <Property Name="AUTOACTIVATE" Value="1" /> default -->
+  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+  <!-- <Property Name="DeviceBasedLicensing" Value="0" /> default
+  <Updates Enabled="TRUE" /> default -->
+  <Display Level="None" AcceptEULA="TRUE" />
+</Configuration>

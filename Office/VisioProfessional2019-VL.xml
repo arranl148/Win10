@@ -1,0 +1,17 @@
+<Configuration>
+  <Info Description="Visio Professional 2019 - Volume License" />
+  <Add Version="MatchInstalled">
+    <Product ID="VisioPro2019Volume" PIDKEY="F6HCN-JBBTB-RKQMW-9GTBT-3V8K2">
+       <Language ID="MatchOS" Fallback="en-us" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="OneDrive" />
+    </Product>
+  </Add>
+  <Property Name="PinIconsToTaskbar" Value="TRUE" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="1" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+  <Updates Enabled="TRUE" />
+ <!-- <RemoveMSI />-->
+  <Display Level="None" AcceptEULA="TRUE" /> 
+</Configuration>

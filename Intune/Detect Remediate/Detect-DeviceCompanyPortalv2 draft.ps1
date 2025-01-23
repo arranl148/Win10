@@ -1,5 +1,5 @@
 # Latest Microsoft.CompanyPortal_11.2.58
-$AllStubPath="HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Applications\Microsoft.CompanyPortal_11.2.58*"
+$AllStubPath="HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Applications\Microsoft.CompanyPortal_11.2.100*"
 # Check User locations
 $UserWildCard="HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S*\Microsoft.CompanyPortal_11*"
 
@@ -14,10 +14,10 @@ Try {
 		    Company Portal v11.x is installed for at least one user
         	$UserCount = (test-path $USerWildCard |Measure).Count
             Write-Host -ForegroundColor Cyan "User Install only - count $UserCount"
-        	Exit 2
+        	Exit 1
     		} 
     		Else {
-        		Write-Host -ForegroundColor Red "Not Compliant - Device or user"
+        		Write-Host -ForegroundColor Red "Not Compliant - Device or user"`
         		Exit 1
                 }
         } 
